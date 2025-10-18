@@ -14,13 +14,13 @@ Cosmic Niri Session is a lightweight system management utility that provides cro
 
 ### Via Cargo (Recommended)
 ```bash
-cargo install cosmic-niri-session --features openrc
+cargo install cosmic-niri-session 
 ```
 
 ### Manual Build
 ```bash
 cd /path/to/cosmic-niri-session
-cargo build --release --features openrc
+cargo build --release 
 ```
 
 ## Usage Examples
@@ -95,12 +95,12 @@ cargo run --features systemd
 
 **Only OpenRC**:
 ```bash
-cargo run --features openrc
+cargo run 
 ```
 
 ### Testing
 ```bash
-cargo test --features openrc
+cargo test 
 ```
 
 ## Contributing
@@ -109,7 +109,7 @@ cargo test --features openrc
 2. Create your feature branch (`git checkout -b my-feature`)
 3. Make your changes and run tests (`cargo test`)
 4. Commit your changes (`git commit -am "Add: new functionality"`)
-5. Push to the branch (`git push origin my-feature`
+5. Push to the branch (`git push origin my-feature`)
 6. Open a pull request
 
 ## License
