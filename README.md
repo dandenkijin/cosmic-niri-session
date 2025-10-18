@@ -17,20 +17,13 @@ Cosmic Niri Session is a lightweight system management utility that provides cro
 cargo install cosmic-niri-session 
 ```
 
-### Manual Build
+### Manual Build 
 ```bash
 cd /path/to/cosmic-niri-session
 cargo build --release 
 ```
 
 ## Usage Examples
-
-### System Detection
-```bash
-# Check which backend is active
-systemctl --user status   # systemd systems
-runscript --version       # OpenRC systems
-```
 
 ### Environment Management
 #### Set environment variables for current user
@@ -78,30 +71,7 @@ cosmic-niri-session spawn-service "rc-service-name" [pids...]
 cosmic-niri-session get-pids my-process
 ```
 
-## Development
-
-### Add New Features
-To enable specific backends in development:
-
-**Both Backends**:
-```bash
-cargo run --features both
-```
-
-**Only Systemd**:
-```bash
-cargo run --features systemd
-```
-
-**Only OpenRC**:
-```bash
-cargo run 
-```
-
-### Testing
-```bash
-cargo test 
-```
+## Development```
 
 ## Contributing
 
